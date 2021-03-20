@@ -1,0 +1,139 @@
+$table-header: #1E3A8A;
+$table-header-border: white;
+$table-border:white;
+$row-bg: white;
+.inputfmng{
+  width:70%;
+}
+.bfsiinput{
+  width:70%;
+}
+.jan{
+  width:70%;
+}
+.feb{
+  width:70%;
+}
+.march{
+  width:70%;
+}
+.april{
+  width:70%;
+}
+.may{
+  width:70%;
+}
+.june{
+  width:70%;
+}
+.july{
+  width:70%;
+}
+.aug{
+  width:70%;
+}
+.sep{
+  width:70%;
+}
+.oct{
+  width:70%;
+}
+.nov{
+  width:70%;
+}
+.dec{
+  width:70%;
+}
+.form-flex{
+  display: flex;
+}
+.autoinput{
+  width:70%;
+}
+.pharma{
+  width: 70%;
+}
+.infra{
+  width: 70%;
+}
+div {
+  box-sizing: border-box;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.table-container {
+  display: block;
+  margin: 2em auto;
+  width: 90%;
+  max-width: 600px;
+}
+
+
+
+.flex-table {
+  display: flex;
+  flex-flow: row wrap;
+  border-left: solid 1px $table-border;
+  transition: 0.5s;
+  &:first-of-type {
+    border-top: solid 1px $table-header-border;
+    border-left: solid 1px $table-header-border;
+  }
+  &:first-of-type .flex-row {
+    background: $table-header;
+    color: white;
+    border-color: $table-header-border;
+  }
+  &.row:nth-child(odd) .flex-row {
+    background: $row-bg;
+  }
+  &:hover {
+    background: #F5F5F5;
+    transition: 500ms;
+  }
+}
+
+.flex-row {
+  width: calc(100% / 4);
+  text-align: center;
+  padding: 0.5em 0.5em;
+  border-right: solid 1px $table-border;
+  border-bottom: solid 1px $table-border;
+}
+
+.rowspan {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-flow: column wrap;
+  width: 75%;
+  padding: 0;
+  .flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    border-bottom: solid 1px $table-border;
+   
+  }
+}
+
+.flex-cell {
+  width: calc(100% / 3); //1px = border right
+  text-align: center;
+  padding: 0.5em 0.5em;
+  border-right: solid 1px $table-border;
+  //flex: 1 1 33.3%;
+ 
+}
+
